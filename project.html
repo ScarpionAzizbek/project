@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../styles/project.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+.sidebar ul {
+    margin-top: 20px;
+}
+
+.nav {
+    position: absolute;
+    height: 100%;
+    width: calc(100%-240px);
+    left: 300px;
+}
+
+.sidebar.menu-li {
+    size: 100px;
+}
+
+.sidebar ul li {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin: 0 5px;
+    list-style: none;
+    line-height: 50px;
+    
+}
+
+.sidebar ul li a{
+    color: #fff;
+    /*display: flex;*/
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    border-radius: 12px;
+}
+
+.sidebar ul li a:hover {
+   color: #11101d;
+   background: #fff;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+li {
+    list-style-type: none;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 240px;
+    background: #11101d;
+    padding: 6px 14px;
+    transition: all 0.5s ease;
+}
+
+.sidebar .logo_content .logo {
+    color: #fff;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+}
+
+.sidebar #btn {
+    position: absolute;
+    color: #fff;
+    left: 90%;
+    top: 6px;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform: translateX(-50%);
+}
+
+.center-side {
+  position: absolute;
+  height: 50%;
+  width: calc(100% - 300px);
+  left: 300px;
+}
+
+.name-of-field {
+    display: inline-block;
+   /* float: right;*/
+}
+
+#second {
+
+    display: inline-block;
+    
+}
+
+.navigation ul {
+    display: flex;
+    padding: 100px;
+}
+
+.nav ul li {
+    list-style: none;
+    justify-content: space-between;
+}
+.nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .logo_content .logo .profile img {
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: flex;
+    right: 10px;
+}
+.sidebar .logo_content .logo .profile {
+    display: flex;
+    text-align: center;
+}
+
+.sidebar.active {
+    width: 240px;
+}
+
+    </style>
+    <script src= "../scripts/project.js" defer></script>
+</head>
+
+<body>
+
+    <div class="nav">
+       <h1>home</h1>
+
+    </div>
+    
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                
+                <div class="logo-name">
+                   <div class="profile">
+                      <img src="../images/nature2.jpg" alt=""> 
+                   <div><br> &nbsp Coding lab </div>
+                   <i class='bx bx-menu' id="btn"></i>
+                   </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="menu-li">
+           <ul class="nav_list">
+            <li>
+                <a href="#">
+                  <i class='bx bxs-grid'></i>
+                   <a href="project.html">Главный</a>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class='bx bx-location-plus'></i> 
+                    <a href="place.html">Месторождение</a> 
+                     
+                </a>
+                
+            </li>
+
+            <li>
+                <a href="place.html">
+                    <i class='bx bx-store'></i> 
+                    <a href="links_name">Запасы</a> 
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class='bx bx-hard-hat'></i>   
+                    <a href="links_name">Добыча</a> 
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog' ></i>  
+                    <a href="links_name">Настройки</a> 
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class='bx bx-stats'></i>  
+                    <a href="#links_name">Статистика</a> 
+                </a>
+            </li>
+        </div>
+    </div>
+    
+
+</body>
+</html>
